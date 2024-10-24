@@ -4,54 +4,92 @@
         <meta charset="utf-8" http-equiv="refresh" content="5;URL='index.html'">
         <meta name="keywords" content="Rust, прога, юмор">
         <title>Этот сайе покажет интересные финты, которые были мной открыты за время изучения 'Rust'</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="index_style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     </head>
     <body>
-        <div class="welcome_page">
-            <main> 
-                <pre>
-<h3>  
-     #####   ##   ##   #####     ####   ###  ##   ####    ##   ##    ####            ######   ##   ##   #####   ######
-    ##   ##  ##   ##  ##   ##   ##  ##   ##  ##    ##     ###  ##   ##  ##            ##  ##  ##   ##  ##   ##  # ## #
-    #        ##   ##  ##   ##  ##        ## ##     ##     #### ##  ##                 ##  ##  ##   ##  #          ##
-     #####   #######  ##   ##  ##        ####      ##     ## ####  ##                 #####   ##   ##   #####     ##
-         ##  ##   ##  ##   ##  ##        ## ##     ##     ##  ###  ##  ###            ## ##   ##   ##       ##    ##
-    ##   ##  ##   ##  ##   ##   ##  ##   ##  ##    ##     ##   ##   ##  ##            ##  ##  ##   ##  ##   ##    ##
-     #####   ##   ##   #####     ####   ###  ##   ####    ##   ##    #####           #### ##   #####    #####    ####
-</h3>
-                </pre>
-                <h1>Приветствую странник!</h1>
-                <p> 
-                    <h4>
-                        Так как что это мой первый текст на этом сайте. Меня зовут Миша и я впервые<br> 
-                        прикасаюсь к Rust (язык а не игра). Уже в шоке от нового способ управления<br>
-                        памятью (после C++ и C# это немного шокирует, но и интригует). Я знаю, что<br>
-                        скучно читать вступление так что если ты до сюда доберешься, то получи от<br> 
-                        меня +500 социального рейтинга.
-                    </h4>
-                </pre>
-            </main>
-            <aside>
-                <h1>Темы моего сайта</h1>
-                <ul>
-                    <li><a href="/memory.html">Управление памятью(owners)</a></li>
-                    <li><a href="/references.html">Указатели(references)</a></li>
+        <!-- Header / Navbar -->
+        <header>
+            <nav class="nav-bar section-content">
+                <a href="#" class="nav-logo">
+                    <h2 class="logo-text">Rust</h2>
+                </a>
+                <ul class="nav-menu">
+                    <button id="menu-close-button" class="fas fa-times"></button>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Themes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
                 </ul>
-            </aside>
-            <footer>
-                <h3>полезные ссылки</h3>
-                <nav>
-                    <a href="https://t.me/Ta1yAnGsHeN">
-                        <img src="/imgs/telegram.png" width="60" height="60">
-                    </a>
-                    <a href="https://github.com/M1RCLE">
-                        <img src="/imgs/github.png" width="60" height="60">
-                    </a>
-                    <a href="https://doc.rust-lang.org/book/title-page.html">
-                        <img src="/imgs/rust.png" width="60" height="60">
-                    </a>
-                </nav>
-            </footer>
-        </body>
-    </div>
+                <button id="menu-open-button" class="fas fa-bars"></button>
+            </nav>
+        </header>
+        <!-- Intro section -->
+        <main>
+            <section class="intro-section">
+                <div class="section-content">
+                    <div class="intro-details">
+                        <h2 class="title">New way with old knowladge</h2>
+                        <h3 class="subtytle">Язык глазами новичка со знаниями</h3>
+                        <p class="description">Меня зовут Миша, и я впервые пишу на Rust (язык, а не игра). 
+                            Я знаю, что скучно читать вступление, так что если ты до сюда дочитал, 
+                            то получи от меня +500 социального рейтинга.</p>
+                    </div>
+                    <div class="fisher-img-wrapper">
+                        <img src="imgs/rust-crab.png" alt="fisher" class="fisher-img">
+                    </div>
+                </div>
+            </section>
+            <section class="about-section">
+                <div class="section-content">
+                    <div class="about-image-wrapper">
+                        <img src="imgs/author.png" alt="About" class="about-image">
+                    </div>
+                    <div class="about-details">
+                        <h2 class="section-title">About creator</h2>
+                        <p class="text">Я студент третьего (на данный момент) курса и очень люблю X
+                            прогать. На Guthub так же известен под ником <a href="https://github.com/M1RCLE" class="github-regerence">M1RCLE</a>. 
+                            Создаю этот сайт для выкладывания своих мыслей и демонстрации навыков. Кстати, сейчас я преподаю в университете ITMO,
+                            так что для читателя некоторые идеи могут показаться знакомыми😊
+                        </p>
+                        <div class="social-link-list">
+                            <a href="https://www.instagram.com/mshindarev/profilecard" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://t.me/Ta1yAnGsHeN" class="social-link"><i class="fa-brands fa-telegram"></i></a>
+                            <a href="https://github.com/M1RCLE" class="social-link"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <aside>
+            <h1>Темы моего сайта</h1>
+            <ul>
+                <li><a href="/memory.html">Управление памятью(owners)</a></li>
+                <li><a href="/references.html">Указатели(references)</a></li>
+            </ul>
+        </aside>
+        <!-- <footer>
+            <h3>полезные ссылки</h3>
+            <nav>
+                <a href="https://t.me/Ta1yAnGsHeN">
+                    <img src="/imgs/telegram.png" width="60" height="60">
+                </a>
+                <a href="https://github.com/M1RCLE">
+                    <img src="/imgs/github.png" width="60" height="60">
+                </a>
+                <a href="https://doc.rust-lang.org/book/title-page.html">
+                    <img src="/imgs/rust.png" width="60" height="60">
+                </a>
+            </nav>
+        </footer> -->
+        <script src="script.js"></script>
+    </body>
 </html>
