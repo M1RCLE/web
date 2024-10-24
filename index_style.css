@@ -363,4 +363,8 @@ header .nav-bar {
         width: calc(100% / 2 - 30px);
     }
 
+    .menu-section .menu-list .menu-item .menu-image {
+        max-width: 200px;
+    }
+
 }
